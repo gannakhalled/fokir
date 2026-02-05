@@ -1,0 +1,374 @@
+@media (min-width: 320px) and (max-width: 992px) {
+    header .content h4{
+        font-size: 30px;
+    }
+     header .content h1{
+        font-size: 40px;
+    }
+     header .content p{
+        font-size: 15px;
+    }
+    nav .logo{
+        width: 14%;
+    }
+        nav .part2 ul li:not(:last-child) {
+        margin: auto auto 50px;
+    }
+    nav .links li{
+        width: fit-content;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    nav .links ul li::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    transition-duration: .5s;
+    }
+    nav .links ul li:hover::after{
+    width:100%
+    }
+    nav .links ul li.first::after{
+    width:100%;    
+    }
+    nav .links ul li:hover a{
+    color: var(--main-color);
+    }
+    nav .links .burger{
+        display: block;
+        height: 35px;
+        width: 40px;
+        border: 1px solid var(--main-color);
+        background-color: var(--bgColor);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    nav .links .burger span{
+        display: block;
+        width: 60%;
+        height: 2px;
+        background-color: var(--main-color);
+       
+    }
+    nav .links ul{
+        position: fixed;
+        top: 60px;
+        left: 50%;
+        transform: translatex(-50%);
+        bottom: -430%;
+        background-color: var(--bgColor);
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        height: 0px;
+        padding: 0;
+        overflow: hidden;
+        transition-duration: 1s;
+    }
+    nav .container .links .burger:focus + ul{
+        height: 250px;
+        padding: 20px;        
+    }
+    nav .links ul li:not(:last-child){
+    margin-right: 0px;
+    margin-bottom: 15px;
+    }
+    #About .container{
+        flex-wrap: wrap;
+    }
+    #About .container .part1{
+        flex-basis: 100%;
+     }
+    #About .container .part1 .frame{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    #About .container .part2{
+         flex-basis: 100%;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 100%;
+    }
+    #Services .container .item{
+        flex-basis: 100%;
+        padding: 20px 25px;
+        margin-bottom: 30px;
+    }
+    .title .lines{
+    width: 50%;
+    margin: 10px auto 0px;
+   }
+   #Portfolio .container .item{
+    flex-basis: 100%;
+   }
+   #Portfolio .container .item a{
+    bottom: -35%;
+    padding: 10px 10px;
+   }
+   #Blog .container .cards .item{
+    flex-basis: 100%;
+   }
+   #Blog .container .cards .item:not(:last-child) {
+    margin-bottom: 20px;
+   }
+   #Contact_Us .container form {
+    width: 90%;
+    margin: auto;
+}
+   #Contact_Us .container .col {
+    width: 100%;
+}
+#Contact_Us .container form button{
+    width: 100%;
+} 
+}
+
+@media (min-width: 371px) and (max-width: 992px) {
+    nav .logo{
+        width: 11%;
+    }
+    nav .links .burger{
+        height: 30px;
+        width: 35px;
+    }
+    nav .links ul{
+        top: 60px;
+    }
+    #About .container .part1 .frame{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+    #About .container .part2 .info .col .item *{
+        font-size: 12px;
+    }
+    #Services .container .item{
+         padding: 20px 10px;
+          flex-basis: 80%;
+    }
+    #Portfolio .container .item{
+    flex-basis: 80%;
+   }
+   #Blog .container .cards .item{
+    flex-basis: 75%;
+   }    
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+        header .content h4{
+        font-size: 35px;
+    }
+     header .content h1{
+        font-size: 45px;
+    }
+     header .content p{
+        font-size: 20px;
+    }
+     header .content a{
+        bottom: -90%;
+     }
+     nav .logo{
+        width:9%;
+    }
+     nav{
+        height: 12%;
+     }
+     nav .links ul{
+        top: 70px;
+     }
+     #Services .container .item{
+         padding: 20px 20px;
+          flex-basis: 40%;
+    }
+     #Portfolio .container .item{
+    flex-basis: 48%;
+    height: 250px;
+   }
+   #Portfolio .container .item a{
+     font-size: 12px;
+   }
+   #Blog .container .cards .item{
+    flex-basis: 48%;
+   }            
+     
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    header .content h4{
+        font-size: 40px;
+    }
+     header .content h1{
+        font-size: 50px;
+    }
+     header .content p{
+        font-size: 25px;
+    }
+     nav .logo{
+        width:7%;
+    }
+    nav .links .burger{
+        height: 30px;
+        width: 35px;
+    }
+     nav{
+        height: 12%;
+     }
+     nav .links ul{
+        top: 70px;
+     }
+     .container{
+        width: 90%;
+        margin: auto;
+     }
+     #About .container{
+       gap: 20px;
+       flex-wrap: nowrap;
+     }
+     #About .container .part1{
+        flex-basis: 50%;
+     }
+    #About .container .part1 .frame{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    #About .container .part2{
+         flex-basis: 50%;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+    #About .container .part2  p,h5{
+        font-size: 12px;
+    }
+    #Portfolio .container .item{
+    flex-basis: 38%;
+    height: 250px;
+   }
+   #Portfolio .container .card{
+    gap: 60px;
+   }
+   #Blog .container .cards .item{
+    flex-basis: 40%;
+   }
+   #Contact_Us .container form {
+    width: 70%;
+    margin: auto;
+}
+   #Contact_Us .container .col {
+    width: calc(50% - 5px);
+}                
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    header .content h1{
+        font-size: 60px;
+    }
+    header .content a{
+        bottom: -85%;
+     }
+     nav .logo{
+        width:6%;
+    }
+    nav .links .burger{
+        height: 30px;
+        width: 35px;
+    }
+     nav{
+        height: 12%;
+     }
+     nav .links ul{
+        top: 70px;
+     }
+     .container{
+        width: 90%;
+        margin: auto;
+     }
+     #About .container{
+       gap: 20px;
+       flex-wrap: nowrap;
+     }
+     #About .container .part1{
+        flex-basis: 50%;
+     }
+    #About .container .part1 .frame{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    #About .container .part2{
+         flex-basis: 50%;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+    #About .container .part2  p,h5{
+        font-size: 12px;
+    }
+     #Services .container .item{
+        flex-basis: 22%;
+    }
+    #Portfolio .container .item{
+    flex-basis: 30%;
+    }
+   #Portfolio .container .item a{
+    bottom: -40%;
+    padding: 10px 10px;
+   }
+   #Blog .container .cards .item{
+    flex-basis: 32%;
+   }
+   #Contact_Us .container form button{
+    width: 100%;
+   }                      
+
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+    header .content h1{
+        font-size: 70px;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+     }
+     #About .container{
+       gap: 20px;
+       flex-wrap: nowrap;
+     }
+     #About .container .part1{
+        flex-basis: 50%;
+     }
+    #About .container .part1 .frame{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    #About .container .part2{
+         flex-basis: 50%;
+    }
+    #About .container .part2 .info .col{
+        flex-basis: 50%;
+    }
+    #About .container .part2  p,h5{
+        font-size: 12px;
+    }
+    #Services .container .item{
+        flex-basis: 22%;
+        padding: 20px 10px;
+        margin-bottom: 30px;
+    }        
+
+}
